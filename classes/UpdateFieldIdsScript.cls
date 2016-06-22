@@ -1,4 +1,6 @@
 public class UpdateFieldIdsScript {
+    //test comment 
+    
     public static void execute(){
         ToolingApi theToolingApi = new ToolingApi();
         List<ToolingAPIWSDL.sObject_x> results = theToolingApi.query('Select Id, DeveloperName, NamespacePrefix From CustomObject Where DeveloperName = \'BB_A\'').records;
