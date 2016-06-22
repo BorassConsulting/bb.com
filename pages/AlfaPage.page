@@ -1,0 +1,12 @@
+<apex:page standardController="Alfa__c" showHeader="true" sidebar="true">
+	<apex:sectionHeader title="MyHeaderTitle" subtitle="MyHeaderSubTitle" />
+	<apex:pageBlock title="MyPageBlockTitle">
+		<apex:pageBlockButtons location="top">			
+		</apex:pageBlockButtons>
+		<apex:pageBlockSection title="MyPageBlockSectionTitle">		
+			<apex:repeat value="{!$ObjectType.Alfa__c.FieldSets.Test_Field_Set}" var="f"> 
+    			<apex:outputText value="{!Alfa__c[f]}" /><br/>
+			</apex:repeat>		
+		</apex:pageBlockSection>
+	</apex:pageBlock>
+</apex:page>
